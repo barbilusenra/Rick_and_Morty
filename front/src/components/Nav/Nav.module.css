@@ -1,0 +1,100 @@
+/* @font-face {
+    font-family: rick_and_morty;
+    src: url("/src/assets/get_schwifty.ttf");} */
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+    
+@font-face {
+ font-family: 'Advent Pro';
+ src: url("/src/assets/letra.ttf");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+.h1 {
+    margin: auto;
+    color: rgb(255, 254, 255);
+    font-family: Delicious Handrawn;
+    font-size: 2rem;
+    filter: drop-shadow(6px 4px 5px #40ff01);
+  }
+  
+.about{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration: none;  
+    color: rgba(17, 248, 29, 0.973);
+    border-radius: 5px;   
+    border: none;
+    width: 100px;
+    margin: 0 0 0 15px;
+    font-family: 'Advent Pro';
+    font-size:medium;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow:inset -2px -2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    filter: drop-shadow(6px 4px 5px #40ff01);
+}    
+
+.container .about:hover {
+  box-shadow: 0 0 4px 3px rgb(255, 0, 230);  
+  }
+
+  .salir {   
+    border: 3px solid rgba(255, 255, 255, 0.459);
+    margin: 0 0 0 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 25px;
+    height: 25px;       
+  }
+
+  .salir:hover {
+    box-shadow: 0 0 4px 3px rgb(255, 0, 230);     
+  }
+  
+ .random{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;  
+  color: rgba(17, 248, 29, 0.973);
+  border-radius: 5px;   
+  border: none;
+  margin: auto;
+  width: 110px; 
+  font-family: 'Advent Pro';
+  font-size: medium;
+  letter-spacing: 1px;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.055); 
+  filter: drop-shadow(6px 4px 15px #40ff01);
+  box-shadow:inset -2px -2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+ }
+
+ .random img { 
+  display: block;
+  margin: auto;
+  border-radius: 50px;   
+  border:none;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0 0 0 10px;
+ }
+
+ .random:hover{
+  box-shadow: 0 0 4px 3px rgb(255, 0, 230);  
+ }

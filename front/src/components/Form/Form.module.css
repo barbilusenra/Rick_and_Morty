@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:wght@600;700&display=swap");
+
+.container {
+ display: flex;
+ justify-content:center;
+ align-items: center;
+
+}
+
+.users{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Advent Pro';
+    font-weight: 700;
+    font-size: large;
+    letter-spacing: 1.1px;
+    margin: 0 0 5px 0;
+}
+
+.error{
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: x-small;
+    color:rgb(2, 2, 87);
+}
+
+.loggin h3 {
+  display: block;
+  color: white;
+  font-family: Bebas Neue;
+  letter-spacing: 1.1px;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.loggin {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 0 6px 4px rgb(2, 255, 10);
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 255, 0.818),
+    rgba(255, 0, 230, 0.818)
+  );
+  margin-top: 30px;
+}
+.loggin input {
+  width: 22rem;
+  height: 20px;
+  padding: 5px;
+  outline: none;
+  font-family: 'Advent Pro';
+  font-weight: bold;
+  font-size: medium;
+  letter-spacing: 1.1px;
+  border-radius: 10px;
+  color: rgb(255, 0, 2305);
+  transition: 0.4s;
+  border: none;
+  background-color: rgba(250, 235, 215, 0.658);
+}
+
+.loggin input:hover {
+  box-shadow: 0 0 6px 2px rgb(255, 0, 230);
+}
+.loggin input:focus {
+  box-shadow: 0 0 6px 2px rgb(255, 0, 230);
+}
+
+.loggin button {
+  width: 22rem;
+  height: 35px;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  background-color: rgb(0, 123, 255);
+  border: none;
+  /* box-shadow: 0 0 3px 1px rgb(255, 0, 230); */
+  color: white;
+  font-family: 'Advent Pro';
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  font-size: x-large;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.loggin button:hover {
+  box-shadow: 0 0 5px 3px rgb(255, 0, 230);
+  background-color: rgb(19, 223, 53);
+  color: blue;
+}
+
+  video {
+    position: fixed;
+    top: 50%;
+    left: 50%;    
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-size: cover;
+  }
+
+  .logo {  
+    /* transform: translateX(-100%) translateY(0%); */
+    position: fixed;   
+    top: 75%;
+    left: 5%;
+    /* z-index: -50; */
+  }
+  
+  .logo img {
+    animation: titleAnimation infinite ease-in-out 3s;
+    width: 300px;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      transform: scale(1) rotateZ(0deg);
+      filter: drop-shadow(0 0 0 rgba(61, 4, 0, 255)) brightness(1);
+    }
+    50% {
+      transform: scale(1.2) rotateZ(3deg);
+      filter: drop-shadow(16px 16px 20px rgb(61 255 215)) brightness(1.4);
+    }
+    100% {
+      transform: scale(1) rotateZ(0deg);
+      filter: drop-shadow(0 0 0 #005f95) brightness(1);
+    }
+  }

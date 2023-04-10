@@ -1,0 +1,164 @@
+@font-face {
+  font-family: rick_and_morty;
+  src: url("/src/assets/rickfont.ttf");
+  /*url('../../src/image.jpeg') acá podes poner una font que sacaste y descargaste de algun lado.*/
+}
+@font-face {
+  font-family: 'Advent Pro';
+  src: url("/src/assets/letra.ttf");
+}
+
+.front, .card .back {
+  /* text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;    */
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 0.2px solid white;
+  width: 230px;
+  padding: 5px;
+  font-family: rick_and_morty;
+  box-shadow: 0px 10px 10px rgba(17, 233, 17, 0.568);
+  box-sizing: border-box;
+  
+}
+  .image {    
+    margin-top: 15px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 2px rgb(43, 255, 0);
+  }
+    
+.cardName {
+    color: rgba(0, 0, 0, 0.973); 
+    font-size: large;
+    font-family: 'Advent Pro'; 
+    font-weight: 700; 
+    margin: 10px 0 0 10px;  
+    border-radius: 5px;
+    height: 20px;
+    width: 200px;
+    border: none;
+    background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 255, 0.582),
+    rgba(255, 0, 230, 0.479)
+    );      
+    box-shadow: 0 0 6px 1px rgb(253, 253, 253);
+  }
+  
+.linkCard{
+  text-decoration: none;
+}
+
+.button2{
+  display: flex;
+  justify-content: flex-end;
+}
+
+  .button2 button {     
+    background: rgba(255, 6, 6, 0.932);
+    border: 1px solid black;
+    color: rgba(255, 255, 255, 0.966);
+    font-family: rick_and_morty;
+    font-size: small;
+    font-weight: 700;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 5px;
+    cursor: pointer;    
+    margin: 10px 5px 0 0;
+    display: flex;
+    align-items: center;  
+  }
+
+.button1 button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: center; */
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  font-size: large;    
+  box-shadow: 0 0 6px 2px rgb(255, 255, 255);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;  
+  width: 30px; 
+  height: 30px;  
+  margin: 25px 0 10px 0; 
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 255, 0.582),
+    rgba(255, 0, 230, 0.479)
+    );   
+}
+.button1{
+  display: flex;
+  justify-content: center;
+}
+.button1 button:hover{  
+  box-shadow: 0 0 3px 2px rgb(23, 19, 255);
+  background-color: rgba(255, 255, 255, 0.349);
+}
+
+.button2 button:hover {
+  background: rgb(194, 10, 10);   
+}
+
+.name {
+  font-size: x-large;
+  color: rgb(42, 56, 255);
+  margin: 15px 0px 10px 0px;
+  letter-spacing: 1.5px;
+  text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.front {
+  z-index: 2;
+  transition: all 1s linear;
+}
+.back {
+  transition: all 1s linear;
+  transform: rotateY(180deg);
+  }
+
+.datos{
+  color: rgba(0, 0, 0, 0.973);
+  font-family: 'Advent Pro';
+  font-size:small;
+}
+
+.card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: 40px
+
+}
+.card:hover .front {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.card:hover .back {
+  transform: rotateY(360deg);
+  cursor: pointer;
+}
+
+.cardName:hover {
+  background-color: rgba(255, 255, 255, 0.349);
+  font-weight: 700;
+  box-shadow: 0 0 5px 2px rgb(23, 19, 255);
+}

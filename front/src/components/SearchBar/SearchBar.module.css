@@ -1,0 +1,64 @@
+.containerSearch{   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   /* margin: 0 30px 0 0; */
+}
+
+.containerSearch input {   
+   border-radius: 10px 0px 0px 10px;
+   border: none;
+   background: rgba(255, 255, 255, 0.089);
+   height:2em;
+   color: rgba(248, 250, 255, 0.973);   
+   width: 180px; 
+   font-family: 'Advent Pro';
+   font-size: medium; 
+   letter-spacing: 1.1px;  
+   filter: drop-shadow(6px 4px 5px #40ff01);
+   box-shadow:inset -2px -2px 2px 0px rgba(255, 255, 255, 0.363),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+   
+}
+.containerSearch input:hover{
+   background: rgba(65, 255, 27, 0.267); 
+}
+
+::placeholder{
+   color: rgba(245, 245, 220, 0.507);
+   letter-spacing: 1.1px;
+  }
+
+.containerSearch button img {  
+   display: block;
+   margin: auto;
+   border-radius: 0px 10px 10px 0px;   
+   border:none;
+   width: 25px;
+   height: 25px;
+   background-color: rgba(0, 0, 0, 0);    
+   /* margin: 0 30px 0 0; */
+  } 
+ .containerSearch button { 
+    border-radius: 0px 10px 10px 0px;
+    background: rgba(255, 255, 255, 0.089);
+    /* border: 1px solid rgba(238, 130, 238, 0.479); */
+    border: none;
+    width: 65px;
+    height: 2em;
+    font-family: 'Advent Pro';
+    font-size:medium;
+    margin: 0 0 0 5px;
+    box-shadow: 0 0 20px rgb(2, 141, 2);
+    box-shadow:inset -2px -2px 2px 0px rgba(255, 255, 255, 0.363),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    filter: drop-shadow(6px 4px 5px #40ff01);
+   } 
+
+ .containerSearch button:hover {
+    background: rgba(65, 255, 27, 0.267);   
+ }
+  

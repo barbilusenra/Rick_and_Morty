@@ -1,0 +1,21 @@
+.selects {
+    margin: 0 0 0 10px;
+    background: rgba(255, 255, 255, 0.096);
+    color: rgba(21, 255, 33, 0.973);
+    border-radius: 5px;   
+    border: none;    
+    padding: 5px 10px 5px 10px;
+    width: 200px;
+    height: 30px; 
+    font-family: Bebas Neue;
+    font-size: medium;
+    letter-spacing: 1.5px;
+    box-shadow:inset -2px -2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.selects:hover{
+    background: rgba(255, 255, 255, 0.336);
+    color: black;
+}

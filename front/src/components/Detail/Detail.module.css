@@ -1,0 +1,86 @@
+.container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: 30px;     */
+    background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 255, 0.582),
+    rgba(255, 0, 230, 0.479)
+    );
+    border-radius: 15px;
+    width: 350px;  
+    margin:auto;
+    font-family: 'Advent Pro';
+    border: none;
+    box-shadow: 0 0 6px 2px rgb(58, 36, 255);
+  }
+ 
+  .container button {       
+    border-radius: 5px;    
+    background: rgba(255, 255, 255, 0.089);
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 60px;    
+    cursor: pointer;
+    font-family: 'Advent Pro';
+    font-size: medium;
+    letter-spacing: 2.5px;
+    font-weight: bolder;
+    margin: 10px 10px 0 270px;
+    transition: all 0.1s ease;
+    box-shadow: 0 0 6px 2px rgb(0, 0, 0);
+  }
+  
+.container button:hover{
+  background: rgba(226, 54, 54, 0.274);
+  color: rgba(250, 253, 255, 0.973); 
+  }
+  
+.imagen {  
+  margin: auto;  
+   width: 60%;
+   border: none;
+   border-radius: 15px;  
+   box-shadow: 0 0 6px 2px rgb(23, 19, 255);
+}  
+    
+.name{ 
+  margin: 0 0 10px 0;
+  font-family: rick_and_morty;
+  font-weight: bold;
+  font-size: medium;
+  color: rgb(124, 144, 209);
+  letter-spacing: 1px;
+  text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.info{ 
+    margin-top: 15px;
+    font-family: Bebas Neue; 
+    font-weight: bold;
+    line-height: 10px; 
+    font-size: small;
+    letter-spacing: 0.8px;
+}
+
+.name {
+  animation: titleAnimation infinite ease-in-out 3s;
+  margin: auto;
+  width: 300px;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: scale(1) rotateZ(0deg);
+    filter: drop-shadow(0 0 0 rgba(61, 4, 0, 255)) brightness(1);
+  }
+  50% {
+    transform: scale(1.2) rotateZ(3deg);
+    filter: drop-shadow(16px 16px 20px rgb(61 255 215)) brightness(1.4);
+  }
+  100% {
+    transform: scale(1) rotateZ(0deg);
+    filter: drop-shadow(0 0 0 #005f95) brightness(1);
+  }
+}

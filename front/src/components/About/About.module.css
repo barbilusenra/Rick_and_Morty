@@ -1,0 +1,112 @@
+@font-face {
+    font-family: rick_and_morty;
+    src: url("/src/assets/rickfont.ttf");
+    /*url('../../src/image.jpeg') acá podes poner una font que sacaste y descargaste de algun lado.*/
+  }
+  @font-face {
+    font-family: 'Advent Pro';
+    src: url("/src/assets/letra.ttf");
+  }
+  .container{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+  }
+
+  .front,
+  .back { 
+    border: 1px solid rgba(255, 255, 255, 0.767);
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 15px;
+    width: 250px;
+    padding: 10px;    
+    font-family: rick_and_morty;  
+    box-shadow:inset -2px -2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+ 
+    }
+
+    .bienvenida{
+    letter-spacing: 1.5px;
+    text-shadow: -3px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-family: rick_and_morty;
+    color: rgba(36, 167, 47, 0.575);
+    font-size: 300%;
+  
+  }
+  
+  /* .frase{
+    letter-spacing: 0.5px;
+    font-family: Advent Pro;
+    color: rgba(36, 167, 47, 0.575);
+    margin-top: 450px;
+  } */
+
+  .image {
+    width: 90%;
+    border-radius: 15px;   
+    border: none;
+    box-shadow: 0px 0px 10px rgba(17, 233, 17, 0.568);
+    margin: 20px 0 20px 0;
+  }
+
+  .data{
+    letter-spacing: 1.5px;
+    text-shadow: -2px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: xx-large;
+    color: rgb(231, 62, 247);
+    margin: 15px 0px 10px 0px;
+  }
+  
+  .dataa{
+    letter-spacing: 1.5px;
+    color: rgba(248, 248, 248, 0.685);
+    font-family: Bebas Neue;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    font-size:x-large;
+    font-weight: 700;
+  }
+
+  .datos{
+    color: rgba(0, 0, 0, 0.74);  
+    font-family: Bebas Neue;
+    font-size:medium;
+    font-weight: 700;
+    margin: 20px;
+    line-height: 40px;
+  }
+  
+  .front,
+  .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 240px 0 0 550px; 
+    
+  }
+
+  .front {    
+    z-index: 2;
+    transition: all 1s linear;   
+  }
+
+  .back {
+    transition: all 1s linear;
+    transform: rotateY(180deg);
+  }
+  
+  .container:hover .front {
+    transform: rotateY(180deg);
+  
+  }
+  .container:hover .back {
+    transform: rotateY(360deg);
+  
+  }
+  
+
